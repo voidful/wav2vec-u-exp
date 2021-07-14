@@ -15,6 +15,10 @@ step 1. build and run docker image
 docker build -t wav2vec-u .
 docker run -v $(pwd):/workspace/data --gpus all -it --rm wav2vec-u
 ```
+or use the image from docker hub:
+```shell
+docker run -v $(pwd):/workspace/data --gpus all -it voidful/wav2vec-u:1.0.0 bash
+```
 
 step 2. data perpetration, training and evaluation.
 ```shell
