@@ -20,6 +20,7 @@ or use the image from docker hub:
 docker run -v $(pwd):/workspace/data --gpus all -it voidful/wav2vec-u:1.0.0 bash
 ```
 
+before running step 2, make sure that `librisample` are inside `/workspace/data/`, you can `git clone` this repo to get `librisample`.   
 step 2. data perpetration, training and evaluation.
 ```shell
 # should prepare text first, using espeak-ng are strongly recommend to support more language
